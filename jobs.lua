@@ -128,7 +128,6 @@ TEAM_US2 = DarkRP.createJob("US Recon Unit", {
    hasLicense = false,
    candemote = true,
    category = "United States",
-   PlayerCanPickupWeapon = function(ply, weapon) return true end
 })
 
 TEAM_US3 = DarkRP.createJob("US Heavy Infantry", {
@@ -195,7 +194,7 @@ TEAM_US7 = DarkRP.createJob("US Officer", {
    color = Color(0, 128, 255, 255),
    model = {"models/codmw2/t_codm.mdl"},
    description = [[You are an officer for the United States Army. Your job is to muster a squad of teammates to patrol, raid, defend, ect. You take orders from the Commander.]],
-   weapons = {"cw_g4p_masada_acr",  "cw_g4p_glock17"},
+   weapons = {"cw_scarl",  "cw_g4p_glock17"},
    command = "usofficer",
    max = 2,
    salary = 250,
@@ -210,7 +209,7 @@ TEAM_US8 = DarkRP.createJob("US Commander", {
    color = Color(0, 128, 255, 255),
    model = {"models/codmw2/codmw2he.mdl"},
    description = [[You are the commander for the United States Army. Your take orders from the General of the Army and command your troops the way you want to, to get the mission done.]],
-   weapons = {"cw_g4p_m16a2", "cw_g4p_glock17"},
+   weapons = {"cw_g4p_magpul_masada", "cw_g4p_glock17"},
    command = "uscommander",
    max = 1,
    salary = 250,
@@ -245,7 +244,7 @@ TEAM_US9 = DarkRP.createJob("US General of the Army", {
    end
 })                                                                                                                   
 
-TEAM_US10 = DarkRP.createJob("US Speacial Forces", {
+TEAM_US10 = DarkRP.createJob("US Special Forces", {
    color = Color(0, 128, 255, 255),
    model = {"models/codmw2/codmw2m.mdl"},
    description = [[You are  a one manned special forces "team". You take orders directly from the General of the Army.]],
@@ -260,11 +259,11 @@ TEAM_US10 = DarkRP.createJob("US Speacial Forces", {
    category = "United States",
 })
 
-TEAM_US1 = DarkRP.createJob("US Infiltrator", {
+TEAM_US11 = DarkRP.createJob("US Infiltrator", {
    color = Color(0, 128, 255, 255),
    model = {"models/codmw2/codmw2h.mdl"},
-   description = [[You are an infantry unit for the United States Army. Follow your superior's orders and lead the U.S to victory!]],
-   weapons = {"cw_kriss_5_vector", "cw_g4p_glock17"},
+   description = [[You are an infiltrator for the United States army! Infiltrate enemy bases and break their defenses from the inside!]],
+   weapons = {"cw_kriss_5_vector", "cw_g4p_glock17", "realistic_hook"},
    command = "usinfiltrator",
    max = 1,
    salary = 250,
@@ -590,7 +589,7 @@ TEAM_CN1 = DarkRP.createJob("CN Infantry", {
             "models/voxelzero/player/odst.mdl"
             },
    description = [[You are an infantry unit for the Chinese Army .Follow your superior's orders and lead Russia to victory!]],
-   weapons = {"cw_mn23", "cw_g4p_glock17"},
+   weapons = {"cw_aw_ak12", "cw_g4p_glock17"},
    command = "cninfantry",
    max = 5,
    salary = 250,
@@ -653,8 +652,8 @@ TEAM_CN4 = DarkRP.createJob("CN Sniper", {
 TEAM_CN5 = DarkRP.createJob("CN Support Unit", {
    color = Color(255, 56, 25, 255),
    model = {"models/player/Rottweiler/mc.mdl"},
-   description = [[You are a light machine gunner for the Chinese Army. Your job is to defend your base. YOU ARE NOT TO JOIN RAIDS. YOU ARE A DEFENSIVE UNIT, NOT AN OFFENSIVE UNIT!]],
-   weapons = {"cw_240b", "cw_g4p_glock17"},
+   description = [[You are a support unit for the Chinese army! Lay down cover fire and suppress the enemy!]],
+   weapons = {"cw_ak74", "cw_g4p_glock17"},
    command = "cnsupportunit",
    max = 1,
    salary = 250,
@@ -686,7 +685,7 @@ TEAM_CN7 = DarkRP.createJob("CN Officer", {
             "models/voxelzero/player/voxelspartan.mdl"
             },
    description = [[You are an officer for the Chinese Army. Your job is to muster a squad of teammates to patrol, raid, defend, ect. You take orders from the Colonel.]],
-   weapons = {"cw_g4p_xm8", "cw_g4p_glock17"},
+   weapons = {"cw_mn23", "cw_g4p_glock17"},
    command = "cnofficer",
    max = 2,
    salary = 250,
@@ -701,7 +700,7 @@ TEAM_CN8 = DarkRP.createJob("CN Commander", {
    color = Color(255, 56, 25, 255),
    model = {"models/voxelzero/player/voxelspartan.mdl"},
    description = [[You are the Commander for the Chinese Army. Your take orders from the General of the Army and command your troops the way you want to, to get the mission done.]],
-   weapons = {"cw_g4p_magpul_masada", "cw_g4p_glock17"},
+   weapons = {"cw_aacgsm", "cw_g4p_glock17"},
    command = "cncommander",
    max = 1,
    salary = 250,
@@ -736,11 +735,11 @@ TEAM_CN9 = DarkRP.createJob("CN General of the Army", {
    end
 })
 
-TEAM_CN10 = DarkRP.createJob("CN Speacial Forces", {
+TEAM_CN10 = DarkRP.createJob("CN Special Forces", {
    color = Color(0, 128, 255, 255),
    model = {"models/voxelzero/player/voxelspartan.mdl"},
    description = [[You are  a one manned special forces "team". You take orders directly from the General of the Army.]],
-   weapons = {"cw_kriss_5_vector", "cw_g4p_g2contender", "cw_g4p_glock17"},
+   weapons = {"cw_aacgsm", "cw_g4p_g2contender", "cw_g4p_glock17"},
    command = "cnspecialforces",
    max = 2,
    salary = 250,
@@ -751,10 +750,29 @@ TEAM_CN10 = DarkRP.createJob("CN Speacial Forces", {
    category = "China",
 })
 
+TEAM_CN11 = DarkRP.createJob("CN Infiltrator", {
+   color = Color(0, 128, 255, 255),
+   model = {"models/mass effect 2/player/inferno_armour_colour.mdl"},
+   description = [[You are an infiltrator for the Chinese army! Infiltrate enemy bases and break their defenses from the inside!]],
+   weapons = {"cw_clue_test", "cw_g4p_glock17", "realistic_hook"},
+   command = "cninfiltrator",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   candemote = true,
+   sortOrder = 2,
+   category = "China",
+})
+
+
+-- GERMANY --
+
 TEAM_DE1 = DarkRP.createJob("DE Infantry", {
    color = Color(32, 32, 32, 255),
    model = {"models/player/pmc_4/pmc__12.mdl"},
-   description = [[You are an infantry unit for the German Army .Follow your superior's orders and lead Germany to victory!]],
+   description = [[You are an infantry unit for the German Army. Follow your superior's orders and lead Germany to victory!]],
    weapons = {"cw_g4p_g36c", "cw_g4p_usp40"},
    command = "deinfantry",
    max = 5,
@@ -771,7 +789,7 @@ TEAM_DE2 = DarkRP.createJob("DE Recon Unit", {
    color = Color(32, 32, 32, 255),
    model = {"models/player/pmc_4/pmc__03.mdl"},
    description = [[You are a recon unit for the German Army. Your job is to gather intel on enemy units.]],
-   weapons = {"util_binoculars", "cw_g4p_usp40"},
+   weapons = {"cw_g4p_usp40"},
    command = "derecon",
    max = 2,
    salary = 250,
@@ -815,7 +833,7 @@ TEAM_DE4 = DarkRP.createJob("DE Sniper", {
 TEAM_DE5 = DarkRP.createJob("DE Support Unit", {
    color = Color(32, 32, 32, 255),
    model = {"models/player/pmc_4/pmc__13.mdl"},
-   description = [[You are a support unit for the German Army. Your job is to defend your base. YOU ARE NOT TO JOIN RAIDS. YOU ARE A DEFENSIVE UNIT, NOT AN OFFENSIVE UNIT!]],
+   description = [[You are a support unit for the German army! Lay down cover fire and suppress the enemy!]],
    weapons = {"cw_240b", "cw_g4p_usp40"},
    command = "delightmachinegunner",
    max = 1,
@@ -896,13 +914,13 @@ TEAM_DE9 = DarkRP.createJob("DE General of the Army", {
    end
 })
 
-TEAM_DE10 = DarkRP.createJob("DE Speacial Forces", {
+TEAM_DE10 = DarkRP.createJob("DE Special Forces", {
    color = Color(0, 128, 255, 255),
-   model = {"models/voxelzero/player/voxelspartan.mdl"},
-   description = [[You are  a one manned special forces "team". You take orders directly from the General of the Army.]],
-   weapons = {"cw_kriss_5_vector", "cw_g4p_g2contender", "cw_g4p_glock17"},
+   model = {"models/player/pmc_4/pmc__04.mdl"},
+   description = [[You are a one manned special forces "team". You take orders directly from the General of the Army.]],
+   weapons = {"cw_auggsm", "cw_g4p_g2contender", "cw_g4p_usp40"},
    command = "despecialforces",
-   max = 2,
+   max = 1,
    salary = 250,
    admin = 0,
    vote = false,
@@ -911,218 +929,263 @@ TEAM_DE10 = DarkRP.createJob("DE Speacial Forces", {
    category = "Germany",
 })
 
-TEAM_CELL1 = DarkRP.createJob("C.E.L.L Soldier", {
-   color = Color(0, 204, 204, 255),
-   model = {"models/player/cellassault1player.mdl"},
+TEAM_DE11 = DarkRP.createJob("DE Infiltrator", {
+   color = Color(0, 128, 255, 255),
+   model = {"models/player/pmc_4/pmc__03.mdl"},
+   description = [[You are an infiltrator for the German army! Infiltrate enemy bases and break their defenses from the inside!]],
+   weapons = {"cw_mn23", "cw_g4p_glock17", "realistic_hook"},
+   command = "deinfiltrator",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   candemote = true,
+   sortOrder = 2,
+   category = "Germany",
+})
+
+
+-- CELL --
+
+TEAM_XOF1 = DarkRP.createJob("XOF Soldier", {
+   color = Color(107, 101, 43, 255),
+   model = {"models/ninja/mgs5gz/mgs5_gz_xof.mdl"},
    description = [[You are a soldier for the PMCs. Follow your orders and get paid.]],
-   weapons = {"cw_g4p_glock17", "cw_g4p_magpul_masada"},
-   command = "cellinfantry",
+   weapons = {"cw_g4p_glock17", "cw_kk_hk416"},
+   command = "xofinfantry",
    max = 5,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = false,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
     customCheck = function(ply)
         return ply:IsUserGroup("bronze") or ply:IsUserGroup("silver") or ply:IsUserGroup("gold") or ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
 })
 
-TEAM_CELL2 = DarkRP.createJob("C.E.L.L Heavy Soldier", {
-   color = Color(0, 204, 204, 255),
-   model = {"models/player/cellassault3player.mdl"},
-   description = [[You are a heavy infantry unit for C.E.L.L Military Company. You are up close and personal and would be the first to enter a base while raiding.]],
+TEAM_XOF2 = DarkRP.createJob("XOF Heavy Soldier", {
+   color = Color(107, 101, 43, 255),
+   model = {"models/ninja/mgs5gz/mgs5_gz_xof2.mdl"},
+   description = [[You are a heavy infantry unit for XOF Military Company. You are up close and personal and would be the first to enter a base while raiding.]],
    weapons = {"cw_xm1014", "cw_g4p_glock17", "lockpick", "keypad_cracker"},
-   command = "cellheavysoldier",
+   command = "xofheavysoldier",
    max = 1,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = false,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
    customCheck = function(ply)
         return ply:IsUserGroup("gold") or ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
 })
 
-TEAM_CELL3 = DarkRP.createJob("C.E.L.L Recon Unit", {
-   color = Color(0, 204, 204, 255),
-   model = {"models/player/cellassault4player.mdl"},
-   description = [[You are a recon unit for the C.E.L.L Military Company. Your job is to gather intel on enemy units]],
+TEAM_XOF3 = DarkRP.createJob("XOF Recon Unit", {
+   color = Color(107, 101, 43, 255),
+   model = {"models/jessev92/player/military/cod4_sniper.mdl"},
+   description = [[You are a recon unit for the XOF Military Company. Your job is to gather intel on enemy units]],
    weapons = {"cw_g4p_glock17", "util_binoculars"},
-   command = "cellreconunit",
+   command = "xofreconunit",
    max = 1,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = false,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
    customCheck = function(ply)
         return ply:IsUserGroup("bronze") or ply:IsUserGroup("silver") or ply:IsUserGroup("gold") or ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
 })
 
-TEAM_CELL4 = DarkRP.createJob("C.E.L.L Medic", {
-   color = Color(0, 204, 204, 255),
-   model = {"models/player/cellassault1player.mdl"},
-   description = [[You are a recon unit for the C.E.L.L Military Company. Your job is to gather intel on enemy units]],
+TEAM_XOF4 = DarkRP.createJob("XOF Medic", {
+   color = Color(107, 101, 43, 255),
+   model = {"models/ninja/mgs5gz/mgs5_gz_xof.mdl"},
+   description = [[You are a recon unit for the XOF Military Company. Your job is to gather intel on enemy units]],
    weapons = {"weapon_medkit", "m9k_vector", "cw_g4p_glock17"}, 
-   command = "cellmedic",
+   command = "xofmedic",
    max = 3,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = false,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
     customCheck = function(ply)
         return ply:IsUserGroup("bronze") or ply:IsUserGroup("silver") or ply:IsUserGroup("gold") or ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
 })
 
-TEAM_CELL5 = DarkRP.createJob("C.E.L.L Commander", {
-   color = Color(0, 204, 204, 255),
+TEAM_XOF5 = DarkRP.createJob("XOF Commander", {
+   color = Color(107, 101, 43, 255),
    model = {"models/player/mgs4_bigboss.mdl"},
-   description = [[You are the Commander for C.E.L.L Military Company. Command your troops and accept or deny requests of hire.]],
+   description = [[You are the Commander for XOF Military Company. Command your troops and accept or deny requests of hire.]],
    weapons = {},
-   command = "cellcommander",
+   command = "xofcommander",
    max = 1,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = true,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
     customCheck = function(ply)
         return ply:IsUserGroup("silver") or ply:IsUserGroup("gold") or ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
 })
 
-TEAM_CELL6 = DarkRP.createJob("C.E.L.L Juggernaut", {
-   color = Color(0, 204, 204, 255),
+TEAM_XOF6 = DarkRP.createJob("XOF Juggernaut", {
+   color = Color(107, 101, 43, 255),
    model = {"models/mw2guy/riot/juggernaut.mdl"},
-   description = [[You are a juggernaut for C.E.L.L Military Company. Take orders from your superior, and remember, no russian.]],
+   description = [[You are a juggernaut for XOF Military Company. Take orders from your superior, and remember, no russian.]],
    weapons = {"cw_240b", "cw_g4p_ump45", "cw_deagle"},
-   command = "celljuggernaut",
+   command = "xofjuggernaut",
    max = 1,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = true,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
    PlayerSpawn =  function(ply) ply:SetArmor(200) ply:SetAmmo(600 , "ar2") end,
     customCheck = function(ply)
         return ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
 })
 
-TEAM_CELL7 = DarkRP.createJob("C.E.L.L Officer", {
-   color = Color(0, 204, 204, 255),
-   model = {"models/player/cellassault1player.mdl"},
-   description = [[You are an officer for C.E.L.L Military Company. Command your troops out in the field and make sure you don't disappoint your customer.]],
+TEAM_XOF7 = DarkRP.createJob("XOF Officer", {
+   color = Color(107, 101, 43, 255),
+   model = {"models/ninja/mgs5gz/mgs5_gz_xof2.mdl"},
+   description = [[You are an officer for XOF Military Company. Command your troops out in the field and make sure you don't disappoint your customer.]],
    weapons = {"cw_g4p_magpul_masada", "cw_g4p_glock17"},
-   command = "cellofficer",
+   command = "xofofficer",
    max = 1,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = false,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
     customCheck = function(ply)
         return ply:IsUserGroup("silver") or ply:IsUserGroup("gold") or ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
 })
 
-TEAM_CELL8 = DarkRP.createJob("C.E.L.L Special Forces", {
-   color = Color(0, 204, 204, 255),
-   model = {"models/player/cellassault1player.mdl"},
-   description = [[You are special forces for C.E.L.L Military Company. You do not work with other parts of the company. You either work solo or with the other special forces in the company.]],
+TEAM_XOF8 = DarkRP.createJob("XOF Special Forces", {
+   color = Color(107, 101, 43, 255),
+   model = {"models/ninja/mgs4_haven_trooper.mdl"},
+   description = [[You are special forces for XOF Military Company. You do not work with other parts of the company. You either work solo or with the other special forces in the company.]],
    weapons = {"cw_mn23", "cw_g4p_awm", "cw_g4p_glock17"},
-   command = "cellspecialforces",
+   command = "xofspecialforces",
    max = 2,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = false,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
    customCheck = function(ply)
         return ply:IsUserGroup("gold") or ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
 })
 
-TEAM_CELL9 = DarkRP.createJob("C.E.L.L Sniper", {
-   color = Color(0, 204, 204, 255),
-   model = {"models/jessev92/player/military/cod4_sniper.mdl"},
-   description = [[You are a sniper for C.E.L.L Military Company. Follow you officer's orders and use your sniping skills to take down foes! Work with the recon unit for maximum proficiency!]],
+TEAM_XOF9 = DarkRP.createJob("XOF Sniper", {
+   color = Color(107, 101, 43, 255),
+   model = {"models/characters/mgsv/quiet.mdl"},
+   description = [[You are the legendary sniper for XOF Military Company, Quiet. Follow your officer's orders and use your sniping skills to take down foes! Work with the recon unit for maximum efficiency!]],
    weapons = {"cw_g4p_awm", "cw_g4p_glock17"},
-   command = "cellsniper",
+   command = "xofsniper",
    max = 1,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = false,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
     customCheck = function(ply)
         return ply:IsUserGroup("silver") or ply:IsUserGroup("gold") or ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
 })
 
-TEAM_CELL10 = DarkRP.createJob("C.E.L.L Assassin", {
-   color = Color(0, 204, 204, 255),
-   model = {"models/player/cellassault4player.mdl"},
-   description = [[You are an assassin for C.E.L.L. Kill people for money. It's that simple.]],
+TEAM_XOF10 = DarkRP.createJob("XOF Assassin", {
+   color = Color(107, 101, 43, 255),
+   model = {"models/ninja/mgs4_haven_trooper.mdl"},
+   description = [[You are an assassin for XOF. Kill people for money. It's that simple.]],
    weapons = {"cw_g4p_glock17", "util_binoculars"},
-   command = "cellassassin",
+   command = "xofassassin",
    max = 1,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = false,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
    customCheck = function(ply)
         return ply:IsUserGroup("bronze") or ply:IsUserGroup("silver") or ply:IsUserGroup("gold") or ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
 })
 
-TEAM_CELL11 = DarkRP.createJob("C.E.L.L Protection Unit", {
-   color = Color(0, 204, 204, 255),
-   model = {"models/player/cellassault4player.mdl"},
-   description = [[You are a protection unit for C.E.L.L military company. People pay you to protect whatever they want protected.]],
+TEAM_XOF11 = DarkRP.createJob("XOF Protection Unit", {
+   color = Color(107, 101, 43, 255),
+   model = {"models/ninja/mgs5gz/mgs5_gz_xof.mdl"},
+   description = [[You are a protection unit for XOF military company. People pay you to protect whatever they want protected.]],
    weapons = {"cw_g4p_glock17", "cw_aacgsm"},
-   command = "cellprotectionunit",
+   command = "xofprotectionunit",
    max = 1,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = false,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
    customCheck = function(ply)
         return ply:IsUserGroup("bronze") or ply:IsUserGroup("silver") or ply:IsUserGroup("gold") or ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
 })
 
-TEAM_CELL12 = DarkRP.createJob("C.E.L.L Sabatoge Specialist", {
-   color = Color(0, 204, 204, 255),
-   model = {"models/player/cellassault4player.mdl"},
-   description = [[You are a sabatoge specialist for C.E.L.L military company. Destroy things for money.]],
+TEAM_XOF12 = DarkRP.createJob("XOF Sabatoge Specialist", {
+   color = Color(107, 101, 43, 255),
+   model = {"models/ninja/mgs5gz/mgs5_gz_xof.mdl"},
+   description = [[You are a sabatoge specialist for XOF military company. Destroy things for money. THIS IS NOT A SUICIDE BOMBER CLASS! ANY INNOCENT PEOPLE THAT DIE FROM THE EXPLOSIVE MAY BE CONSIDERED RDM!]],
    weapons = {"cw_g4p_glock17", "cw_xm1014", "m9k_suicide_bomb"},
-   command = "cellsabatogespecialist",
+   command = "xofsabatogespecialist",
    max = 1,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = false,
    candemote = true,
-   category = "C.E.L.L Military Company (Mercenaries)",
+   category = "XOF Military Company",
+   customCheck = function(ply)
+        return ply:IsUserGroup("titanium") or ply:IsAdmin()
+    end,
+})
+
+TEAM_XOF13 = DarkRP.createJob("XOF Elite Commando", {
+   color = Color(107, 101, 43, 255),
+   model = {"models/ninja/mgs5gz/mgs5_gz_big_boss_sneaking_suit.mdl",
+            "models/ninja/mgs5gz/mgs5_gz_big_boss_sneaking_suit_bandana.mdl",
+            "models/ninja/mgs5gz/mgs5_gz_big_boss_sneaking_suit_bloody.mdl",
+            "models/ninja/mgs5gz/mgs5_gz_big_boss_sneaking_suit_bloody_bandana.mdl",
+            "models/ninja/mgs5gz/mgs5_gz_big_boss_sneaking_suit_wet.mdl",
+            "models/ninja/mgs5gz/mgs5_gz_big_boss_sneaking_suit_wet_bandana.mdl",
+            "models/ninja/mgs5gz/mgs5_gz_big_boss_sneaking_suit.mdl",
+            "models/ninja/mgs5gz/mgs5_gz_msf_sneaking_suit.mdl"
+            },
+   description = [[You are the XOF Elite Commando. You conduct raids on any place... For the right price. You answer to no one and carry out your missions as you see fit. You are considered the most elite soldier, not only within XOF, but on the entire battlefield. You should be feared.]],
+   weapons = {"cw_g4p_glock17", "cw_xm1014", "m9k_suicide_bomb"},
+   command = "xofelitecommando",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   candemote = true,
+   category = "XOF Military Company",
    customCheck = function(ply)
         return ply:IsUserGroup("titanium") or ply:IsAdmin()
     end,
@@ -1508,7 +1571,7 @@ TEAM_MASTER = DarkRP.createJob("Master", {
    color = Color(94, 6, 0, 255),
    model = {"models/grealms/characters/kyloren/kyloren.mdl"},
    description = [[Penguin's custom class. Serves as a scavenger and abductor.]],
-   weapons = {"cw_kk_hk416", "cw_deagle", "cw_xm1014", "weapon_lightsaber"},
+   weapons = {"cw_kk_hk416", "cw_deagle", "cw_xm1014"},
    command = "master",
    max = 1,
    salary = 1000,
@@ -1892,10 +1955,10 @@ DarkRP.createCategory{
 }
 
 DarkRP.createCategory{
-   name = "C.E.L.L Military Company (Mercenaries)",
+   name = "XOF Military Company",
    categorises = "jobs",
    startExpanded = false,
-   color = Color(0, 204, 204, 255),
+   color = Color(107, 101, 43, 255),
    canSee = fp{fn.Id, true},
    sortOrder = 8,
 }
