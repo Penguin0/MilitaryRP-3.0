@@ -52,9 +52,9 @@ TEAM_SCAVENGER = AddExtraTeam("Scavenger", {
 
 TEAM_RAIDER = AddExtraTeam("Raider", {
    color = Color(20, 150, 20, 255),
-    model = "models/player/arctic.mdl",
+    model = "models/player/legion/3e_soldier.mdl",
     description = [[Advanced scavenger.]],
-    weapons = {"weapon_fists", "lockpick", "keypad_cracker", "cw_ak74"},
+    weapons = {"weapon_fists", "lockpick", "keypad_cracker", "cw_clue_test"},
     command = "raider",
     max = 2,
     salary = 45,
@@ -67,13 +67,41 @@ TEAM_RAIDER = AddExtraTeam("Raider", {
     end,
 })
 
-TEAM_GUN = AddExtraTeam("Weapons Dealer", {
+TEAM_RAIDER = AddExtraTeam("Abductor", {
+   color = Color(20, 150, 20, 255),
+    model = "models/player/phoenix.mdl",
+    description = [[Abductors abduct (kidnap) people and hold them for ransom. Max ransom is $100,000.]],
+    weapons = {"weapon_cuff_elastic"},
+    command = "abductor",
+    max = 1,
+    salary = 45,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Civilians"
+})
+
+TEAM_LGUN = AddExtraTeam("Light Arms Dealer", {
     color = Color(20, 150, 20, 255),
     model = "models/player/pmc_3/pmc__01.mdl",
     description = [[Neautral party to all wars. Supply weapons to soldiers.]],
     weapons = {},
-    command = "dealer",
-    max = 3,
+    command = "lightarmsdealer",
+    max = 2,
+    salary = 45,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Civilians"
+})
+
+TEAM_HGUN = AddExtraTeam("Heavy Arms Dealer", {
+    color = Color(20, 150, 20, 255),
+    model = "models/player/pmc_3/pmc__01.mdl",
+    description = [[Neautral party to all wars. Supply weapons to soldiers.]],
+    weapons = {},
+    command = "heavyarmsdealer",
+    max = 2,
     salary = 45,
     admin = 0,
     vote = false,
@@ -1095,7 +1123,7 @@ TEAM_XOF8 = DarkRP.createJob("XOF Special Forces", {
 
 TEAM_XOF9 = DarkRP.createJob("XOF Sniper", {
    color = Color(107, 101, 43, 255),
-   model = {"models/characters/mgsv/quiet.mdl"},
+   model = {"models/jessev92/player/military/cod4_sniper.mdl"},
    description = [[You are the legendary sniper for XOF Military Company, Quiet. Follow your officer's orders and use your sniping skills to take down foes! Work with the recon unit for maximum efficiency!]],
    weapons = {"cw_g4p_awm", "cw_g4p_glock17"},
    command = "xofsniper",
@@ -1177,7 +1205,7 @@ TEAM_XOF13 = DarkRP.createJob("XOF Elite Commando", {
             "models/ninja/mgs5gz/mgs5_gz_msf_sneaking_suit.mdl"
             },
    description = [[You are the XOF Elite Commando. You conduct raids on any place... For the right price. You answer to no one and carry out your missions as you see fit. You are considered the most elite soldier, not only within XOF, but on the entire battlefield. You should be feared.]],
-   weapons = {"cw_g4p_glock17", "cw_xm1014", "m9k_suicide_bomb"},
+   weapons = {"cw_kk_hk416", "cw_g4p_customizable_knife", "cw_deagle", "cw_g4p_g2contender", "cw_xm1014"},
    command = "xofelitecommando",
    max = 1,
    salary = 250,
@@ -1363,7 +1391,7 @@ TEAM_MP5 = DarkRP.createJob("MP Sniper", {
    color = Color(0, 0, 255, 255),
    model = {"models/jessev92/player/military/cod4_sniper.mdl"},
    description = [[You are a sniper for the United Nations. Follow you officer's orders and use your sniping skills to take down foes! Work with the recon unit for maximum proficiency!]],
-   weapons = {"m9k_intervention", "bb_glock_alt"},
+   weapons = {"cw_g4p_m98b", "cw_g4p_glock17"},
    command = "unsniper",
    max = 1,
    salary = 250,
